@@ -1,0 +1,91 @@
+*{
+    color: aliceblue;
+    transition: 0.5s;
+    
+}
+*::selection{
+    background-color: black;
+    color: whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(https://i.pinimg.com/originals/03/a8/9d/03a89d47c0a0ffc3bcf4a78a07537763.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.logo{
+position: absolute;
+left: 580px;
+top: -5px;
+}
+
+.wellcome{
+    text-align: center;
+    transform: translateY(150px);
+}
+
+
+.container{
+    width: 560px;
+    height: 700px;
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 15px auto;
+    position: absolute;
+    left: 27%;
+    top: 350px;
+    opacity: 0.8;
+    transform: translateY(-50px);
+}
+.container:hover{
+    backdrop-filter: blur(8px);
+    opacity: 1;
+}
+
+.container div{
+        margin-bottom: 23px;
+}
+.container input,select{
+    color: rgb(0, 0, 0);
+    font-weight: 800px;
+    font-size: large;
+    border-radius: 13px;
+    outline: none;
+    border: 2px solid rgb(6, 5, 14);
+}
+
+.container label{
+    font-size: 18px;
+    font-weight: 150px;
+}
+
+
+.join-4 input {
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    width: 115px;
+    height: 47px;
+    margin: 0.5em;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateX(222px);
+}
+#z1{
+    transform: translateX(70px);
+}
+#ag1{
+    width: 60px;
+}
+option{
+    background-color: rgb(0, 0, 0);
+}
+#imge-up{
+    width: 260px;
+}
