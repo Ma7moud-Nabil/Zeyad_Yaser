@@ -1,6 +1,8 @@
 * {
     box-sizing: content-box;
     /* transition: 0.5s; */
+    margin: 0;
+    padding: 0;
 }
 
 *::selection {
@@ -12,16 +14,108 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+/* body {
     background-image: url(https://i.pinimg.com/originals/49/d3/e5/49d3e56ddfdc1c0ce4c7d8ab5b50e7a1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: rgb(255, 255, 255);
     scroll-behavior: smooth;
+} */
+
+body {
+    background-image: url(https://i.pinimg.com/originals/ef/7a/07/ef7a0752e7d53bd8a5c4e8141460a30d.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
 }
 
-.head {
+
+/* ================================================= */
+/* start Header */
+header {
+    border-radius: 0 0 30px 30px;
+    background-color: rgb(0, 0, 0, 65%);
+    box-shadow: 10px 10px 80px rgb(12, 14, 11) inset;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -ms-border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header ul {
+    list-style: none;
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    padding: 20px;
+}
+
+header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header ul li:last-child {
+    border-left: 4px solid white;
+}
+
+@media (max-width: 991px) {
+    header ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .logo img {
+        width: 80px;
+    }
+    
+    header ul {
+        gap: 20px;
+    }
+    
+    header ul li {
+        padding: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 570px) {
+    
+    header .logo img {
+        width: 60px;
+    }
+    
+    header ul li {
+        padding: 0 0 5px 5px;
+    }
+    
+    header ul {
+        gap: 8px;
+        padding: 0;
+    }
+    
+    header ul li:last-child {
+        border-width: 2px;
+    }
+    
+    header ul li a {
+        font-size: 10px;
+    }
+}
+
+/* .head {
     border-radius: 30px;
     width: 100%;
     height: 120px;
@@ -64,21 +158,29 @@ ul {
 
 .logo {
     margin-left: 15px;
-}
+} */
 
-body{
-    background-image: url(https://i.pinimg.com/originals/ef/7a/07/ef7a0752e7d53bd8a5c4e8141460a30d.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-
-
-
-
+/* End Header */
+/* ================================================= */
 
 .back-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: fixed;
+    top: 65%;
+    left: 94%;
+    border-radius: 40%;
+    opacity: 50%;
+}
+
+
+/* .back-top {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,4 +193,4 @@ body{
     top: 600px;
     left: 1250px;
     border-radius: 40%;
-}
+} */
